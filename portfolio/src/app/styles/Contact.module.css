@@ -1,0 +1,97 @@
+/* Center the content with padding */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 100vh;
+    background-color: #f9f9f9; /* Light background */
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .container h1 {
+    font-size: 2.5rem;
+    color: #222; /* Dark gray text */
+    margin-bottom: 1rem;
+  }
+  
+  /* Form styling */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 1.5rem;
+  }
+  
+  /* Input and Textarea fields */
+ .form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+ .form input[type="text"],
+ .form input[type="email"],
+ .form input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form textarea:focus {
+    border-color: #0070f3; /* Highlight on focus */
+    outline: none;
+  }
+  
+  .form input[type="text"]:focus,
+  .form input[type="email"]:focus,
+  .form input[type="password"]:focus {
+    border-color: #0070f3; /* Highlight on focus */
+    outline: none;
+  }
+  
+  /* Submit button styling */
+  .form button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #0070f3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .container h1 {
+      font-size: 2rem;
+    }
+  
+    .form textarea {
+      font-size: 0.9rem;
+    }
+    
+    .form input[type="text"],
+    .form input[type="email"],
+    .form input[type="password"] {
+        font-size: 0.9rem;
+    }
+  }
+  
